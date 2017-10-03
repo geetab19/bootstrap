@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
@@ -5,25 +7,29 @@
 //
 // Color system
 //
-$blue: #007bff;
-$red: #dc3545;
-$yellow: #ffc107;
-$green: #28a745;
-$cyan: #17a2b8;
+$blue: #00aced;
+$red: #db5b42;
+$yellow: #fb3;
+$green: #149077;
+$cyan: #1dcaff;
+
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: 'Poppins', sans-serif;
-$font-family-monospace:  "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:       $font-family-sans-serif;
+$font-family-sans-serif: "Roboto", sans-serif;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$btn-font-weight: 500;
 
 $font-size-base: .9rem;
-$font-size-lg: 1.125rem;
-$font-size-sm: .7875rem;
-$line-height-base: 1.35;
-$h1-font-size: 2.25rem;
+$font-size-lg: 1.13rem;
+$font-size-sm: .8rem;
+$line-height-base: 1.4;
+$h1-font-size: 2.3rem;
 $h2-font-size: 1.8rem;
-$h3-font-size: 1.575rem;
-$h4-font-size: 1.35rem;
-$h5-font-size: 1.125rem;
-$h6-font-size: .9rem;
+$h3-font-size: 1.6rem;
+$h4-font-size: 1.3rem;
+$h5-font-size: 1.13rem;
+$h6-font-size: 1rem;
