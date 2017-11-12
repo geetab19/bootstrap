@@ -4,18 +4,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.0.0-beta): tab.js
+ * Bootstrap (v4.0.0-beta.2): tab.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
-var Tab = function () {
+var Tab = function ($) {
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
   var NAME = 'tab';
-  var VERSION = '4.0.0-beta';
+  var VERSION = '4.0.0-beta.2';
   var DATA_KEY = 'bs.tab';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -69,8 +69,8 @@ var Tab = function () {
         return;
       }
 
-      var target = void 0;
-      var previous = void 0;
+      var target;
+      var previous;
       var listElement = $(this._element).closest(Selector.NAV_LIST_GROUP)[0];
       var selector = Util.getSelectorFromElement(this._element);
 
@@ -130,7 +130,7 @@ var Tab = function () {
     _proto._activate = function _activate(element, container, callback) {
       var _this2 = this;
 
-      var activeElements = void 0;
+      var activeElements;
 
       if (container.nodeName === 'UL') {
         activeElements = $(container).find(Selector.ACTIVE_UL);
@@ -255,5 +255,5 @@ var Tab = function () {
   };
 
   return Tab;
-}(jQuery);
+}($);
 //# sourceMappingURL=tab.js.map

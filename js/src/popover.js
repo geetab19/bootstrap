@@ -4,12 +4,12 @@ import Tooltip from './tooltip'
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.0.0-beta): popover.js
+ * Bootstrap (v4.0.0-beta.2): popover.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
-const Popover = (() => {
+const Popover = (($) => {
 
 
   /**
@@ -19,7 +19,7 @@ const Popover = (() => {
    */
 
   const NAME                = 'popover'
-  const VERSION             = '4.0.0-beta'
+  const VERSION             = '4.0.0-beta.2'
   const DATA_KEY            = 'bs.popover'
   const EVENT_KEY           = `.${DATA_KEY}`
   const JQUERY_NO_CONFLICT  = $.fn[NAME]
@@ -124,7 +124,11 @@ const Popover = (() => {
 
       // we use append for html objects to maintain js events
       this.setElementContent($tip.find(Selector.TITLE), this.getTitle())
-      this.setElementContent($tip.find(Selector.CONTENT), this._getContent())
+      let content = this._getContent()
+      if (typeof content === 'function') {
+        content = content.call(this.element)
+      }
+      this.setElementContent($tip.find(Selector.CONTENT), content)
 
       $tip.removeClass(`${ClassName.FADE} ${ClassName.SHOW}`)
     }
@@ -133,9 +137,7 @@ const Popover = (() => {
 
     _getContent() {
       return this.element.getAttribute('data-content')
-        || (typeof this.config.content === 'function' ?
-              this.config.content.call(this.element) :
-              this.config.content)
+        || this.config.content
     }
 
     _cleanTipClass() {
