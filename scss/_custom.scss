@@ -7,29 +7,29 @@
 //
 // Color system
 //
-$blue: #00aced;
-$red: #db5b42;
-$yellow: #fb3;
-$green: #149077;
-$cyan: #1dcaff;
+$blue: #00aced !default;
+$red: #db5b42 !default;
+$yellow: #fb3 !default;
+$green: #149077 !default;
+$cyan: #1dcaff !default;
 
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-sans-serif: "Roboto", sans-serif;
+$font-family-sans-serif: "Roboto", sans-serif !default;
 
-$font-weight-normal: 400;
-$font-weight-bold: 700;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
 
-$btn-font-weight: 500;
+$btn-font-weight: 500 !default;
 
-$font-size-base: .9rem;
-$font-size-lg: 1.13rem;
-$font-size-sm: .8rem;
-$line-height-base: 1.4;
-$h1-font-size: 2.3rem;
-$h2-font-size: 1.8rem;
-$h3-font-size: 1.6rem;
-$h4-font-size: 1.3rem;
-$h5-font-size: 1.13rem;
-$h6-font-size: 1rem;
+$font-size-base: .9rem !default;
+$font-size-lg: 1.13rem !default;
+$font-size-sm: .8rem !default;
+$line-height-base: 1.4 !default;
+$h1-font-size: 2.3rem !default;
+$h2-font-size: 1.8rem !default;
+$h3-font-size: 1.6rem !default;
+$h4-font-size: 1.3rem !default;
+$h5-font-size: 1.13rem !default;
+$h6-font-size: 1rem !default;
